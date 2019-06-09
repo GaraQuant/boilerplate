@@ -1,0 +1,20 @@
+spring:
+  liquibase:
+    enabled: false
+
+strategy:
+  simulation:
+    enable: false
+
+  #Exchanges to use
+  exchanges:
+    - exchangeEnum: BFX
+      apiKey:
+      secretKey:
+      securities:
+        - symbol: BTCUSD
+    - exchangeEnum: BNC
+      apiKey:
+      secretKey:
+      securities:
+        - symbol: ETHUSDT
